@@ -185,6 +185,6 @@ $TeamsMeetings |
     @{Name="JoinUrl"; Expression = { $_.onlineMeeting.joinUrl }} |
   Export-Csv -Path $OutputCsvPath -NoTypeInformation -Encoding UTF8
 
- 
+ Write-Host ("Output written to: {0}" -f $OutputCsvPath)
 
  
